@@ -231,6 +231,7 @@ img {
     border-top: 2px solid #faa41a;
     padding: 20px;
     padding-top: 10px;
+    box-shadow: 0px -4px 10px black;
 }
 .instructions {
     font-size: 20px;
@@ -298,4 +299,8 @@ button {
 }
 button:focus {
     background-color: #faa41a !important;
+}
+
+.big-heading {
+    box-shadow: 0px 4px 10px black;
 }
