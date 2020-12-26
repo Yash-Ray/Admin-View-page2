@@ -23,10 +23,10 @@
     <div class="container-main">
         <div class="applicant-info">
             <div class="domains">
-                <div class="technical"><button class="domain-option">Technical</button></div>
-                <div class="management"><button class="domain-option ongoing">Management</button></div>
-                <div class="design"><button class="domain-option">Design</button></div>
-                <div class="documentation"><button class="domain-option">Documentation</button></div>
+                <div class="technical"><button class="domain-option" id="tech-box" onclick="activate_box1()">Technical</button></div>
+                <div class="management"><button class="domain-option" id="management-box" onclick="activate_box2()">Management</button></div>
+                <div class="design"><button class="domain-option" id="design-box" onclick="activate_box3()">Design</button></div>
+                <div class="documentation"><button class="domain-option" id="docs-box" onclick="activate_box4()">Documentation</button></div>
             </div>
             <div class="applicant-name">
                 <div class="name">Arjun Das, <span>20BDS0129</span></div>
@@ -158,5 +158,54 @@
     </div>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        function activate_box1() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            mang.classList.remove("ongoing");
+            desg.classList.remove("ongoing");
+            docs.classList.remove("ongoing");
+            tech.classList.add("ongoing");
+        }
+
+        function activate_box2() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            tech.classList.remove("ongoing");
+            desg.classList.remove("ongoing");
+            docs.classList.remove("ongoing");
+            mang.classList.add("ongoing");
+        }
+
+        function activate_box3() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            tech.classList.remove("ongoing");
+            mang.classList.remove("ongoing");
+            docs.classList.remove("ongoing");
+            desg.classList.add("ongoing");
+        }
+
+        function activate_box4() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            tech.classList.remove("ongoing");
+            mang.classList.remove("ongoing");
+            desg.classList.remove("ongoing");
+            docs.classList.add("ongoing");
+        }
+    </script>
 </body>
 </html>

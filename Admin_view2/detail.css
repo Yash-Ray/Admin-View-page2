@@ -218,6 +218,7 @@ img {
 }
 .commentor-name {
     margin-left: 20px;
+    color: whitesmoke;
 }
 .actual-comment {
     background: #c4c4c4;
@@ -291,6 +292,9 @@ button {
     padding: 0px 10px;
     width: calc(fit-content + 10px);
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.28s all ease-in;
+    transition: 0.1s all ease-out;
 }
 button:focus {
     background-color: #faa41a !important;
